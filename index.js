@@ -10,9 +10,9 @@ for(var i=0; i< word.length ;i++){
   if(key < 26){
       
       let var1= word.charCodeAt(i);
-      console.log(var1)
+      //console.log(var1)
     let var2=(((var1+key)-64)%26+65);
-    console.log(var2)
+    //console.log(var2)
     let var3=String.fromCharCode(var2);
     cipher_var.push(var3)
 
@@ -32,7 +32,7 @@ for(var i=0; i< word.length ;i++){
 
 }
 let a=cipher_var.toString();
-console.log(a.replace(/,/g,""))
+console.log("Cipher Text:"+a.replace(/,/g,""))
 
 //x="hello"
 //a=x.split(" ")
